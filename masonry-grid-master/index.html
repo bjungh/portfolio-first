@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Responsive grid - flex layout</title>
+  <style>
+    *{
+      margin: 0; padding: 0;
+      box-sizing: borer-box;
+    }
+    body{
+      background: #333;
+      color: #fff;
+    }
+    #gallery{
+      text-align: center;
+    }
+    #gallery h2{
+      font-size: 48px;
+      color: #fff;
+      font-weight: normal;
+      padding: 16px;
+    }
+    #gallery .container{
+      max-width: 1200px;
+      display: flex;
+      margin: 20px auto;
+    } 
+    .m-list{
+      flex: 1;
+      transition: 0.5s;
+    }
+    .m-list a{
+      display: block;
+      padding: 10px;
+    }
+    .m-list a img{
+      width: 100%;
+      vertical-align: middle;
+    }
+    
+    @media (max-width: 768px){
+      .m-list{
+        flex: none;
+        flex-basis: 50%;
+      }
+    }
+    
+    @media (max-width: 400px){
+      .m-list{
+        flex: none;
+        flex-basis: 100%;
+      }
+    }    
+    
+  </style>
+</head>
+<body>
+  
+  <section id="gallery">
+    <h2>Responsive Grid</h2>
+    <p>CSS3 Flex Layout</p>
+    <div class="container">
+   <div class="m-list">
+     <a href="#"><img src="http://placeimg.com/300/200/33" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/400/400/44" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/200/300/11" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/300/400/22" alt=""></a>
+   </div>
+   <div class="m-list">
+     <a href="#"><img src="http://placeimg.com/400/350/2" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/300/400/3" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/200/300/6" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/300/400/1" alt=""></a>
+   </div>
+   <div class="m-list">
+     <a href="#"><img src="http://placeimg.com/300/400/9" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/400/400/8" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/200/300/0" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/300/200/4" alt=""></a>
+   </div> 
+    <div class="m-list">
+     <a href="#"><img src="http://placeimg.com/350/300/19" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/400/500/18" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/300/200/10" alt=""></a>
+     <a href="#"><img src="http://placeimg.com/300/300/11" alt=""></a>
+   </div>       
+      </div><!-- end contianer -->
+  </section>
+</body>
+</html>
