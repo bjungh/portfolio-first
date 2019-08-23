@@ -1,0 +1,145 @@
+*{padding: 0%;margin: 0%;list-style: none;box-sizing: border-box;}
+a{text-decoration: none;}
+ul,li{
+    list-style: none;
+}
+html,body{
+    height: 100%;
+    height: 100vh;
+    /* background: rgba(0 ,0, 0, 0.3); */
+}
+/* 시작 */
+.wrap{
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    margin: 0% auto;
+    display: flex;
+    flex: 2;
+    /* position: relative; */
+     /* background: rgba(0 , 0, 0, 0.8);  */
+}
+aside{
+    width: 20%;
+    height: 100%;
+    height: 100vh;    
+    /* float: left; */
+    position: relative;; 
+    top: 0;bottom: 0;    
+    background: rgba(0 , 0, 0, 0.8);
+}
+
+.text{
+    margin-top: 1rem;
+    text-align: center;
+}
+.text h1{
+    padding: 10px;
+}
+.text h1 a{
+    padding: 10px;
+    color: white;
+}
+.text h4{
+    padding: 5px;
+    color: white;
+}
+.line{
+     width: 1px;
+     height: 200px;
+     border: 1px solid white;
+     margin-left: 49%;
+     margin-top: 20px;
+}
+nav{
+    text-align: center;
+    /* height: 400px; */
+    position: relative;    
+}
+
+.main-menu{
+    padding: 50px;
+}
+nav >ul> li{
+    /* height: 40px; */
+    border-bottom:1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    /* width: 100px; */
+}
+
+nav .main-menu> li a{
+    color: white;
+    font-family: 'Gothic A1', sans-serif;
+}
+nav> .main-menu> li:hover >a{
+    color: wheat;
+}
+nav .sub-menu{
+    display: none;
+}
+nav .sub-menu li{
+    padding: 5px;
+}
+nav .sub-menu li:hover a{
+    color: wheat;
+}
+nav .sub-menu> a{
+    color: white;
+    display: block;
+}
+nav .main-menu li:hover .sub-menu{
+    display: block;
+}
+
+/* 메인섹션 */
+section{
+    width: 80%;
+    /* margin-left: 5%; */
+    height: 100%;
+    /* height: 100vh; */
+    background: rgb(90, 88, 88);
+    float: left;
+    position: relative;
+    /* background-image: url(../images/bg-img-mountain.jpeg);
+    background-position: center center;
+    background-size: cover; */
+}
+.main-visual{
+    max-width: 100%;
+    height: 100vh;
+    position: absolute;
+    height: 100%;
+    left: 10vw;right: 10vw;
+    top: 30%;
+    
+    /* background: rgba(207, 206, 216, 0.3); */
+}  
+.main-visual img{
+    max-width: 100%;
+    /* position: absolute; */
+    /* top: 20%; */
+    
+    animation-delay: 2s;  
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+    animation-duration: 15s; 
+}
+
+
+/* 푸터 */
+ footer{
+    width: 100%;
+    height:80px;
+    background: #777;
+    clear: both;
+}
+.copy{
+    width: 90%;
+    margin: 0% auto;
+   
+}
+.copy p{
+   text-align: center;
+   padding-top: 30px;
+   color: white; 
+} 
